@@ -1,0 +1,9 @@
+
+/* specific color settings for the ranking plugin */
+.ranking-results table thead tr { border-color: #003366;}
+.ranking-results table thead tr th { border-color: #003366; }
+.ranking-results table tr.counting { background-color: #003366; color: white; }
+.ranking-results table tr.notcounting { background-color: #ffacac; color: #003366; }
+.ranking-results table.list tbody tr.odd td { background-color: #86b9ec; }
+.ranking-results table.list tbody tr.even td { background-color: #deeefd; }
+

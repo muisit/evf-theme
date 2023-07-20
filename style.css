@@ -1,0 +1,230 @@
+/*
+Theme Name: EVF-Theme
+Author: muis IT
+Author URI: https://muisit.nl/
+Description: EVF Theme (Vantage Child Theme)
+Version: 1.1.10
+Template: vantage
+Text Domain: vantage
+Domain Path: /languages/
+*/
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* styling for individual Members pages */
+article.member .container.entry-main,
+article.member .container header .row { background: #eee; padding-top: 5px;}
+article.member .container.entry-main .row-flag { height: 50px;  padding-top: 0px;}
+article.member .container.entry-main .row-flag .entry-title { padding-top: 10px; }
+article.member .container.entry-main .row-flag .flag { height: 100%; }
+article.member .container.entry-main .row-flag .flag img { margin-top: 5px; }
+article.member .container .row label { font-weight: bold; }
+article.member .container .address { border: 1px dashed black; border-width: 0px 0px 1px 0px; }
+article.member .post-edit-link { float: right; clear: both;}
+
+.honorary-members {
+	background-image: url(https://www.veteransfencing.eu/wp-content/uploads/2020/06/LogoBg250_9.png); 
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	min-height: 230px;
+	text-align: center;
+}
+.members-list div.row.even { background-color: #eee; }
+.members-list div.row { margin-bottom: 10px; }
+.members-list div.row div.title { vertical-align: center; }
+
+.contacts-list div.row.even { background-color: #eee; }
+.contacts-list div.row { margin-bottom: 5px; }
+.contacts-list div.row div.title { vertical-align: center; }
+.contacts-list div.header div { font-weight: bold; border: 0px solid black; border-bottom-width: 1px; white-space: nowrap;}
+.contacts-list div.row div.type { white-space: nowrap;}
+
+/* Hiding attributions */
+#masthead .hgroup:not(.masthead-sidebar) { display: none; }
+#theme-attribution { display: none; }
+
+/* Display of posts on the news page */
+ul.display-posts-listing { list-style-type: none; margin: 0px; }
+ul.display-posts-listing li { margin-left: 0px; }
+h2.display-posts-title { font-weight: bold; font-size: x-large; margin-top: 6px; }
+ul.display-posts-listing li span.title { font-size: large; }
+
+.btn-primary:hover, .btn-primary { color: #212529; }
+.btn-primary.disabled { color: #eee; }
+.btn { border-width: 0px; }
+.hidden { display: none; }
+
+.library-table table tr td { padding: 2px 4px; }
+
+article figure.alignright, article figure.alignleft { clear: both; }
+
+html { font-size: 100%; }
+
+.wp-block-group { clear: both; position: relative;}
+.wp-block-group .wp-block-image { display: inline-block; vertical-align: top; }
+
+figure { display: table; }
+.wp-block-image .alignleft > figcaption,
+.wp-block-image .alignright > figcaption,
+.wp-block-image .aligncenter > figcaption,
+.wp-block-image.is-resized > figcaption { display: table-caption; caption-side: top; }
+
+.entry-content table thead th { text-align: left; padding: 2px 4px; }
+.entry-content table tbody td { padding: 2px 4px; }
+.entry-content table thead tr { border: 2px solid black;border-width: 0 0 2px 0;}
+.entry-content table.numbers td { text-align: right; }
+.entry-content table.numbers td.label { text-align: left; }
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(2n+1) {
+    background-color: #dde9f6;
+}
+.wp-block-table.partoverview {
+	width: 100%;
+}
+.wp-block-table.partoverview td, .wp-block-table.partoverview th {
+	text-align: right;
+}
+.wp-block-table.list td, .wp-block-table.list th {
+	text-align: left;
+}
+.wp-block-table.medals td, .wp-block-table.medals th {
+	width: 5rem;
+	text-align: center;
+}
+
+.wp-block-table table tbody tr td.label {
+	text-align: left;
+}
+
+
+h3#Overview, h4#Overview, h4#MF, h4#WF, h4#ME, h4#WE, h4#MS, h4#WS {
+	margin-top: -150px;
+	padding-top: 150px;
+}
+
+
+.display-posts-listing .listing-item span.title {
+	font-weight: bold;
+	font-size: x-large;
+	text-decoration: underline;
+}
+
+#cff .cff-author .cff-author-img {
+	margin: 0 !important;
+	margin-left:0px;
+}
+
+.container.board figure {
+	display:flex;
+	margin-bottom: 0;
+}
+
+.container.board figure img.aligncenter {
+	margin-bottom:0;
+	width: auto;
+	height: 137px;
+}
+
+.container.board .row {
+	padding-top:40px;
+}
+
+.container.board .row .align-self-center {
+	align-self: baseline !important;
+}
+
+@media screen and (max-width: 782px) {
+
+	h3#Overview,
+	h4#Overview,
+	h4#MF,
+	h4#WF,
+	h4#ME,
+	h4#WE,
+	h4#MS,
+	h4#WS {
+		margin-top: -100px;
+		padding-top: 100px;
+	}
+
+	.container.board .row {
+		padding-top: 0px;
+	}
+
+	.container.board figure {
+		padding-top: 40px;
+	}
+}
+
+body div.evfranking-manage {
+	background-image: url('btn_manage.png');
+	background-position: 50% 50%;
+	background-color: #003366;
+	background-repeat: no-repeat;
+	width: 90px;
+	height: 20px;
+	float: right;
+	clear: both;
+	margin-bottom: 3px;
+}
+
+body div.evfranking-register {
+	background-image: url('btn_register.png');
+	background-position: 50% 50%;
+	background-color: #003366;
+	background-repeat: no-repeat;
+	width: 90px;
+	height: 20px;
+	float: right;
+	clear: both;
+	margin-bottom: 3px;
+}
+
+body div.evfranking-view {
+	background-image: url('btn_view.png');
+	background-position: 50% 50%;
+	background-color: #003366;
+	background-repeat: no-repeat;
+	width: 90px;
+	height: 20px;
+	float: right;
+	clear: both;
+	margin-bottom: 3px;
+}
+
+body div.evfranking-livefeed {
+	background-image: url('btn_results_long.png');
+	background-position: 50% 50%;
+	background-color: #003366;
+	background-repeat: no-repeat;
+	width: 90px;
+	height: 20px;
+	float: right;
+	clear: both;
+	margin-bottom: 3px;
+}
+
+body div.evfranking-entries {
+	background-image: url('btn_entries.png');
+	background-position: 50% 50%;
+	background-color: #003366;
+	background-repeat: no-repeat;
+	width: 90px;
+	height: 20px;
+	float: right;
+	clear: both;
+	margin-bottom: 3px;
+}
+
+
+.entry-content #evfregistration-frontend-root ul {
+	list-style-type: none;
+}
+
+.entry-content #evfregistration-frontend-root h1,
+.entry-content #evfregistration-frontend-root h2,
+.entry-content #evfregistration-frontend-root h3,
+.entry-content #evfregistration-frontend-root h4,
+.entry-content #evfregistration-frontend-root h5,
+.entry-content #evfregistration-frontend-root h6 { margin: 0px;}
